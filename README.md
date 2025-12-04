@@ -14,7 +14,7 @@ O diferencial técnico deste projeto reside na sua **organização de código**.
 
 O projeto segue o princípio de **Separação de Responsabilidades (SoC)**. Abaixo está o detalhamento de como "tudo está separado" para facilitar a manutenção:
 
-
+```bash
 Mobile_TCC/
 ├── 📂 app/              # Camada de Roteamento e Telas (Screens)
 │   ├── (tabs)/          # Layouts de navegação em abas
@@ -33,6 +33,8 @@ Mobile_TCC/
 ├── 📂 assets/           # Recursos Estáticos (Imagens e Fontes)
 │
 └── 📂 scripts/          # Automação e utilitários de desenvolvimento
+
+```
 
 ## 🛠 Tecnologias
 
