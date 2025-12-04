@@ -1,50 +1,47 @@
-# Welcome to your Expo app 👋
+# 📱 Mobile TCC
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Este repositório contém o código-fonte do aplicativo desenvolvido como Trabalho de Conclusão de Curso (TCC). O projeto foi construído sobre uma arquitetura modular utilizando **React Native**, **Expo** e **TypeScript**, com foco na separação de responsabilidades e escalabilidade.
 
-## Get started
+![Badge Expo](https://img.shields.io/badge/Expo-000020?style=for-the-badge&logo=expo&logoColor=white)
+![Badge React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Badge TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 
-1. Install dependencies
+## 📖 Sobre o Projeto
 
-   ```bash
-   npm install
-   ```
+O diferencial técnico deste projeto reside na sua **organização de código**. A aplicação não é monolítica; ela utiliza o **Expo Router** para roteamento baseado em arquivos e separa estritamente a interface (UI), a lógica de estado (Hooks) e as configurações (Constants).
 
-2. Start the app
+## 🏗 Arquitetura e Estrutura
 
-   ```bash
-   npx expo start
-   ```
+O projeto segue o princípio de **Separação de Responsabilidades (SoC)**. Abaixo está o detalhamento de como "tudo está separado" para facilitar a manutenção:
 
-In the output, you'll find options to open the app in a
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+Mobile_TCC/
+├── 📂 app/              # Camada de Roteamento e Telas (Screens)
+│   ├── (tabs)/          # Layouts de navegação em abas
+│   ├── _layout.tsx      # Configuração global de navegação
+│   └── index.tsx        # Ponto de entrada
+│
+├── 📂 components/       # Camada de Apresentação (UI Dummy Components)
+│   # Componentes puros e reutilizáveis, sem lógica de negócio complexa.
+│
+├── 📂 hooks/            # Camada de Lógica (Custom Hooks)
+│   # Toda a lógica de estado, efeitos e chamadas de API ficam isoladas aqui.
+│
+├── 📂 constants/        # Camada de Configuração
+│   # Cores, temas, tokens de API e strings estáticas.
+│
+├── 📂 assets/           # Recursos Estáticos (Imagens e Fontes)
+│
+└── 📂 scripts/          # Automação e utilitários de desenvolvimento
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 🛠 Tecnologias
 
-## Get a fresh project
+As seguintes ferramentas foram usadas na construção do projeto:
 
-When you're ready, run:
+-   **[React Native](https://reactnative.dev/)**
+-   **[Expo](https://expo.dev/)**
+-   **[TypeScript](https://www.typescriptlang.org/)**
+-   **[Expo Router](https://docs.expo.dev/router/introduction/)** (Gerenciamento de rotas)
 
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+👨‍💻 Autor
+Desenvolvido por SanthiagoCL.
